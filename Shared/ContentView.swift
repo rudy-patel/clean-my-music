@@ -6,10 +6,14 @@
 //
 
 import SwiftUI
+import StoreKit
+
+let controller = SKCloudServiceController()
+let developerToken = "..."
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        Text("Clean my music")
             .padding()
     }
 }
