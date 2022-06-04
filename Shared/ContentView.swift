@@ -12,14 +12,25 @@ let controller = SKCloudServiceController()
 let developerToken = "..."
 
 struct ContentView: View {
+    @State var shouldShowOnboarding: Bool = true
     var body: some View {
-        Text("Clean my music")
-            .padding()
+        
+        NavigationView {
+            VStack {
+                Text("Clean my music")
+                    .padding()
+            }
+            .navigationTitle("Home")
+        }
+        .fullScreenCover(isPresented: $shouldShowOnboarding, content: {
+            OnboardView(shouldShowOnboarding: $shouldShowOnboarding)
+        })
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.light)
     }
 }

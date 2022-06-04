@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD828314284C0A75009334E0 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD828313284C0A75009334E0 /* Onboarding.swift */; };
+		BD828315284C0A75009334E0 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD828313284C0A75009334E0 /* Onboarding.swift */; };
 		BDBE4D80284AB58C00D295F4 /* clean_my_musicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBE4D70284AB58B00D295F4 /* clean_my_musicApp.swift */; };
 		BDBE4D81284AB58C00D295F4 /* clean_my_musicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBE4D70284AB58B00D295F4 /* clean_my_musicApp.swift */; };
 		BDBE4D82284AB58C00D295F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBE4D71284AB58B00D295F4 /* ContentView.swift */; };
@@ -16,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD828313284C0A75009334E0 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		BDBE4D70284AB58B00D295F4 /* clean_my_musicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clean_my_musicApp.swift; sourceTree = "<group>"; };
 		BDBE4D71284AB58B00D295F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BDBE4D72284AB58C00D295F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +60,7 @@
 				BDBE4D70284AB58B00D295F4 /* clean_my_musicApp.swift */,
 				BDBE4D71284AB58B00D295F4 /* ContentView.swift */,
 				BDBE4D72284AB58C00D295F4 /* Assets.xcassets */,
+				BD828313284C0A75009334E0 /* Onboarding.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -176,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD828314284C0A75009334E0 /* Onboarding.swift in Sources */,
 				BDBE4D82284AB58C00D295F4 /* ContentView.swift in Sources */,
 				BDBE4D80284AB58C00D295F4 /* clean_my_musicApp.swift in Sources */,
 			);
@@ -185,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD828315284C0A75009334E0 /* Onboarding.swift in Sources */,
 				BDBE4D83284AB58C00D295F4 /* ContentView.swift in Sources */,
 				BDBE4D81284AB58C00D295F4 /* clean_my_musicApp.swift in Sources */,
 			);
