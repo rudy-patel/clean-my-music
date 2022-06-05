@@ -11,7 +11,7 @@ import SwiftUI
 struct clean_my_musicApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: SongListViewModel())
         }
     }
 }
