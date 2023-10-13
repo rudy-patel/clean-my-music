@@ -57,7 +57,6 @@
 		BDBE4D6A284AB58B00D295F4 = {
 			isa = PBXGroup;
 			children = (
-				BD1F2E0A284D59D6001EEADA /* ArtworkLoader.swift */,
 				BDBE4D6F284AB58B00D295F4 /* Shared */,
 				BDBE4D7E284AB58C00D295F4 /* macOS */,
 				BDBE4D78284AB58C00D295F4 /* Products */,
@@ -67,6 +66,7 @@
 		BDBE4D6F284AB58B00D295F4 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				BD1F2E0A284D59D6001EEADA /* ArtworkLoader.swift */,
 				BDBE4D70284AB58B00D295F4 /* clean_my_musicApp.swift */,
 				BDBE4D71284AB58B00D295F4 /* ContentView.swift */,
 				BD1F2E04284D5121001EEADA /* DataModel.swift */,
