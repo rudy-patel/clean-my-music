@@ -11,10 +11,11 @@ import SwiftUI
 // View for the entire onboarding experience
 struct OnboardView: View {
     @Binding var shouldShowOnboarding: Bool
+    @State private var selectedTabIndex = 0
     
     var body: some View {
         // TabView to display multiple onboarding pages
-        TabView {
+        TabView(selection: $selectedTabIndex) {
             // First onboarding page
             OnboardPageView(systemImageName: "music.note.list",
                             title: "Clean My Music",
@@ -22,6 +23,7 @@ struct OnboardView: View {
                             showRequestAccessButton: false,
                             showDismissButton: false,
                             shouldShowOnboarding: $shouldShowOnboarding)
+            .tag(0)
             
             // Second onboarding page
             OnboardPageView(systemImageName: "iphone.badge.play",
@@ -30,6 +32,7 @@ struct OnboardView: View {
                             showRequestAccessButton: true,
                             showDismissButton: false,
                             shouldShowOnboarding: $shouldShowOnboarding)
+            .tag(1)
             
             // Third onboarding page
             OnboardPageView(systemImageName: "waveform",
@@ -38,9 +41,16 @@ struct OnboardView: View {
                             showRequestAccessButton: false,
                             showDismissButton: true,
                             shouldShowOnboarding: $shouldShowOnboarding)
+            .tag(2)
         }
-        .tabViewStyle(.page(indexDisplayMode: .always))
-        .indexViewStyle(.page(backgroundDisplayMode: .always))
+        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+        .onTapGesture {
+            // Check if the tap is on the last page
+            if selectedTabIndex == 2 && shouldShowOnboarding {
+                shouldShowOnboarding.toggle()
+            }
+        }
     }
 }
 
